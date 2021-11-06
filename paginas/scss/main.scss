@@ -1,0 +1,132 @@
+/*variables de tamaño*/
+$alto: 100px;
+$tamaño-fondo: 20px;
+
+/*variables de color en degrade*/
+$color-fondoA: darkslateblue;
+$color-fondoB: lightblue;
+
+
+.color-fondo {
+    background-image: linear-gradient($color-fondoA, $color-fondoB);
+
+}
+
+.color-fondo2 {
+    background-color: black;
+}  
+
+.pie-de-pagina {
+    text-align: center;
+    color: darkslateblue;
+    font-style: italic;
+    font-weight: bold;
+    font-size: $tamaño-fondo;
+    font-family: "Comic Sans MS", sans-serif;
+    line-height: 2;
+    text-decoration: underline;
+
+}  
+
+.imagen-pie {
+    justify-content: start;
+    height: $alto/2;
+}  
+
+.flexMenu li a:hover {
+  background-color: lightblue;
+  padding: 18px;
+}
+
+.transicion:hover {
+  transition: 4s;
+  font-size: 2rem;
+}
+
+.transicion2:hover {
+  transition: 2s;
+  font-size: 1.3rem;
+}
+
+.tipografia {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: $tamaño-fondo;
+    font-family: "Comic Sans MS", sans-serif;
+    line-height: 2;
+}
+
+.blanconegrita {
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    font-size: $tamaño-fondo;
+    font-family: "Comic Sans MS", sans-serif;
+    line-height: 2;
+}
+
+/*SE UTILIZÓ EL SISTEMA DE GRILLAS PARA LOS CUADRO DE INFORMACION DE ESTADISTICAS*/
+  
+.grid-container2 {
+    display: grid;
+    margin: 40px 0 40px 0;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(3,200px);
+    gap: 1px 1px;
+    text-align: center;
+    justify-content: stretch;
+    font-size: 1.5rem;
+    grid-template-areas:
+    "parteprincipal parteprincipal parteprincipal parteprincipal"
+    "Goleadores Goleadores VallaMenosVencida TarjetasAzules"
+    "TarjetasAmarillas PenalesRecibidos PartidosJugados TarjetasAzules";
+}
+
+.parteprincipal {
+    grid-area: parteprincipal;
+    height: $alto;
+    background-color: #EFF4F7;
+}
+.VallaMenosVencida {
+    grid-area: VallaMenosVencida;
+    background-color: #73CAEF;
+}
+.Goleadores {
+    grid-area: Goleadores;
+    background-color: #89FFFB;
+}
+.TarjetasAzules {
+    grid-area: TarjetasAzules;
+    background-color: #41E2DD;
+}
+.TarjetasAmarillas {
+    grid-area: TarjetasAmarillas;
+    background-color: #50D8C8;
+}
+.PenalesRecibidos {
+    grid-area: PenalesRecibidos;
+    background-color: #53B4F4;
+}
+.PartidosJugados {
+    grid-area: PartidosJugados;
+    background-color: #CDE0E4;
+}
+
+.tipografia2 {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: ($tamaño-fondo+5);
+    font-family: "Comic Sans MS", sans-serif;
+    line-height: 2;
+}
+
+.blanco {
+    color: white;
+}
+
+.color-fondo-cronograma {
+    background-image: linear-gradient(blue, $color-fondoB);
+
+}

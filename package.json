@@ -1,13 +1,13 @@
 {
   "name": "hockey_coriav7",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mauro Coria Proyecto Final",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css":
-    "node-sass --include-path scss scss/main.scss css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+      "node-sass --include-path scss paginas/scss/main.scss paginas/css/main.css",
+      "watch-css": "nodemon -e scss -x \"npm run build-css\""
 
   },
   "repository": {
